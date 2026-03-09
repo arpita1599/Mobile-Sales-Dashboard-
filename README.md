@@ -1,6 +1,6 @@
 # Mobile Sales Dashboard (Power BI)
 
-## 📌 Project Overview
+## Project Overview
 
 This project presents an interactive *Mobile Sales Dashboard* built using *Power BI* to analyze mobile sales performance. The dashboard helps visualize sales trends, customer transactions, and product performance across different cities, months, and payment methods.
 
@@ -8,7 +8,7 @@ The goal of this project is to transform raw sales data into meaningful insights
 
 ---
 
-## 🎯 Objectives
+## Objectives
 
 * Analyze overall mobile sales performance
 * Identify top-selling mobile brands and models
@@ -18,7 +18,7 @@ The goal of this project is to transform raw sales data into meaningful insights
 
 ---
 
-## 📈 Key Dashboard Metrics
+## Key Dashboard Metrics
 
 * *Total Sales:769M
 * *Total Quantity Sold:19K
@@ -27,7 +27,7 @@ The goal of this project is to transform raw sales data into meaningful insights
 
 ---
 
-## 📊 Dashboard Features
+##  Dashboard Features
 
 * Sales analysis by *City*
 * *Monthly Sales Trend* visualization
@@ -46,10 +46,10 @@ The goal of this project is to transform raw sales data into meaningful insights
 
 ## 🛠 Tools & Technologies Used
 
-Power BI* – Data Visualization & Dashboard Development
+Power BI – Data Visualization & Dashboard Development
 Microsoft Excel
-Data Cleaning & Transformation*
-DAX Measures*
+Data Cleaning & Transformation
+DAX Measures
 
 ---
 
@@ -66,7 +66,7 @@ The dataset used in this project contains mobile sales data including:
 
 ---
 
-## 📌 Key Insights
+##  Key Insights
 
 * Apple and Samsung show strong sales performance.
 * Monthly sales trends indicate consistent growth throughout the year.
@@ -76,5 +76,4 @@ The dataset used in this project contains mobile sales data including:
 ---
 
 ## Author
-
 Arpita
