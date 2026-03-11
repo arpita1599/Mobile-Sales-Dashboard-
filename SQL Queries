@@ -1,0 +1,68 @@
+## SQL Analysis Queries (Mobile Sales Project)
+1. Total Sales by Brand
+SELECT "Brand",
+       SUM("Units Sold" * "Price Per Unit") AS total_sales
+FROM mobile_sales
+GROUP BY "Brand"
+ORDER BY total_sales DESC;
+
+2. Monthly Sales Trend
+SELECT "Month",
+       SUM("Units Sold" * "Price Per Unit") AS monthly_sales,
+       SUM(SUM("Units Sold" * "Price Per Unit"))
+       OVER(ORDER BY "Month") AS running_sales
+FROM mobile_sales
+GROUP BY "Month"
+ORDER BY "Month";
+
+3. Top Mobile Models by Units Sold
+SELECT "Mobile Model",
+       SUM("Units Sold") AS total_units
+FROM mobile_sales
+GROUP BY "Mobile Model"
+ORDER BY total_units DESC
+LIMIT 5;
+
+4. City-wise Sales Performance
+SELECT "City",
+       SUM("Units Sold" * "Price Per Unit") AS total_sales
+FROM mobile_sales
+GROUP BY "City"
+ORDER BY total_sales DESC
+LIMIT 5;
+
+5. Payment Method Analysis
+SELECT "Payment Method",
+       COUNT("Transaction ID") AS transactions,
+       SUM("Units Sold" * "Price Per Unit") AS total_sales
+FROM mobile_sales
+GROUP BY "Payment Method"
+ORDER BY transactions DESC;
+
+6. Brand Sales Ranking
+SELECT "Brand",
+       SUM("Units Sold" * "Price Per Unit") AS total_sales,
+       RANK() OVER(ORDER BY SUM("Units Sold" * "Price Per Unit") DESC) AS rank
+FROM mobile_sales
+GROUP BY "Brand";
+
+7. Average Customer Rating by Brand
+SELECT "Brand",
+       ROUND(AVG("Customer Ratings"),2) AS avg_rating
+FROM mobile_sales
+GROUP BY "Brand"
+ORDER BY avg_rating DESC;
+
+8. Sales by Day of Week
+SELECT "Day Name",
+       SUM("Units Sold" * "Price Per Unit") AS total_sales
+FROM mobile_sales
+GROUP BY "Day Name"
+ORDER BY total_sales DESC;
+
+9. Yearly Sales Comparison
+SELECT "Year",
+       SUM("Units Sold" * "Price Per Unit") AS total_sales
+FROM mobile_sales
+GROUP BY "Year"
+ORDER BY "Year";
