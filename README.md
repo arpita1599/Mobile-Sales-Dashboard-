@@ -1,79 +1,48 @@
-# Mobile Sales Dashboard (Power BI)
+## Mobile Sales Data Analysis(PostgreSQL, Power BI)
 
 ## Project Overview
 
-This project presents an interactive *Mobile Sales Dashboard* built using *Power BI* to analyze mobile sales performance. The dashboard helps visualize sales trends, customer transactions, and product performance across different cities, months, and payment methods.
+This project analyzes mobile phone sales data to understand sales performance, customer purchasing trends, and payment behavior. Data was analyzed using SQL and visualized through interactive dashboards in Power BI.
 
-The goal of this project is to transform raw sales data into meaningful insights using data visualization techniques.
+## Tools Used
+SQL | Microsoft Power BI | Excel
 
----
+## Key Analysis
+SQL queries were used to generate insights such as:
+1. Total Sales by Brand
+2. Monthly Sales Trend and Running Sales
+3. Top Mobile Models by Units Sold
+4. City-wise Sales Performance
+5. Payment Method Analysis
+6. Brand Sales Ranking
+7. Average Customer Ratings by Brand
+8. Sales by Day of Week
+9. Yearly Sales Comparison
 
-## Objectives
+## Dashboards:
+The Power BI report contains three dashboards:
+1. Sales Dashboard
+. Total Sales, Quantity, and Transactions
+. Sales by City and Mobile Model
+. Payment Method Distribution
+. Customer Ratings
 
-* Analyze overall mobile sales performance
-* Identify top-selling mobile brands and models
-* Track monthly sales trends
-* Compare sales with the same period last year
-* Understand customer payment preferences
+2. MTD (Month-to-Date) Report
+. Monthly sales trend
+. Running sales analysis
 
----
+3. Same Period Last Year Report
+ . Yearly sales comparison
+ . Sales performance across time periods
 
-## Key Dashboard Metrics
+## Project Structure
+1. Mobile-Sales-Analysis
+. Dataset Xls
+. SQL Queries
+. Power BI Dashboard
 
-* *Total Sales:769M
-* *Total Quantity Sold:19K
-* *Total Transactions:4K
-* *Average Price:40.11K
-
----
-
-##  Dashboard Features
-
-* Sales analysis by *City*
-* *Monthly Sales Trend* visualization
-* *Brand-wise and Model-wise Sales*
-* *Transactions by Payment Method*
-* *Sales comparison with Same Period Last Year*
-* Interactive filters for:
-
-  * Year
-  * Quarter
-  * Month
-  * Mobile Model
-  * Payment Method
-
----
-
-## 🛠 Tools & Technologies Used
-
-Power BI – Data Visualization & Dashboard Development
-Microsoft Excel
-Data Cleaning & Transformation
-DAX Measures
-
----
-
-## Dataset
-
-The dataset used in this project contains mobile sales data including:
-
-* Sales Amount
-* Quantity Sold
-* Transaction Details
-* Payment Methods
-* City Information
-* Mobile Brands and Models
-
----
-
-##  Key Insights
-
-* Apple and Samsung show strong sales performance.
-* Monthly sales trends indicate consistent growth throughout the year.
-* Digital payment methods such as UPI and Cards are widely used.
-* Certain cities contribute significantly to overall sales.
-
----
+## Conclusion
+This project demonstrates how SQL analysis combined with Power BI dashboards can help visualize sales performance and business trends.
 
 ## Author
 Arpita
